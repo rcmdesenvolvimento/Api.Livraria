@@ -1,6 +1,5 @@
 ﻿using Api.Livraria.Models;
 using Api.Livraria.Services.Autor;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Livraria.Controllers
@@ -11,6 +10,7 @@ namespace Api.Livraria.Controllers
     {
 
         private readonly IAutorInterface _autorInterface;
+
         public AutorController(IAutorInterface autorInterface)
         {
             _autorInterface = autorInterface;
